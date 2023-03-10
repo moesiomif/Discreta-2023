@@ -1,3 +1,11 @@
-//Minhas solu
-(=+i)
-Isso é correto
+[Minhas Soluções]
+*Descrever soluções
+
+\include{seuarquivo}
+* Mobius altera*
+//Minhas soluções
+
+\input{sol.tex}
+
+%%----------------
+% Soluções anteriores
