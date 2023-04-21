@@ -1,0 +1,29 @@
+\item Dados os conjuntos $A$ e $B$, seja $X$ um conjunto com as 
+seguintes propriedades:
+\begin{enumerate}
+\item[I.] $X \supset A$ e $X \supset B$,
+\item[II.] Se $Y \supset A$ e $Y \supset B$ então $Y \supset X$
+\end{enumerate}
+Prove que: $X=A\cup B$.
+
+\Sol{
+		Provaremos primeiro ($A\cup B \subset X$):
+
+		Seja 
+		\begin{eqnarray*}
+				x\in A\cup B &\Rightarrow & x\in A\ \text{ou}\ x\in B\\
+				\text{Como, por (I),}\ && A\subset X \ \text{e}\  B\subset X\\
+				\text{Em qualquer caso:}		     &\Rightarrow & x\in X
+		\end{eqnarray*}
+		Portanto, $A\cup B\subset X$.
+
+		Provaremos, agora: ($X\subset A\cup B$):
+		Note que: 
+		\begin{eqnarray*}
+				A\cup B \supset A\ \text{e}\ A\cup B \supset B \ \text{Pela propriedade (II)}\Rightarrow 	A\cup B\supset X
+		\end{eqnarray*}
+		Portanto, $X\subset A\cup B$.
+
+		Assim, dado que $X\subset A\cup B$ e $X\supset A\cup B$, então $X= A\cup B$.
+
+}
