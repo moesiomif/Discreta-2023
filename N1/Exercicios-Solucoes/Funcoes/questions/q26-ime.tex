@@ -1,0 +1,49 @@
+\item
+%(IME )
+		 Definimos a função $f: \mathbb{N} \to \mathbb{N}$ da seguinte forma
+\[
+		\begin{cases}
+		f(0) = 0 \\
+		f(1) = 1 \\
+		f(2n) = f(n),\ n\geq 1 \\
+		f(2n+1) = n^2,\ n\geq 1 \\
+		\end{cases}
+\]
+  Definimos a função $g: \mathbb{N} \to \mathbb{N}$ da seguinte forma: 
+  \[g(n) = f(n)\cdot f(n + 1). \]
+%\begin{multicols}{5}
+  Podemos afirmar que:
+\begin{enumerate}
+		\item $g$ é uma função sobrejetora.
+		\item $g$ é uma função injetora.
+		\item $f$ é uma função sobrejetora.
+		\item $f$ é uma função injetora.
+		\item $g(2018)$ tem mais do que $4$ divisores positivos. 
+\end{enumerate}
+%\end{multicols}
+
+\Sol{
+\begin{enumerate}
+		\item Da igualdade $f(2n) = f(n), n \geq 1$ tem-se
+				\[
+						f(2^k) = f(2^{2k - 1}) = f(2^{2k - 2}) = \cdots = f(2) = f(1) = 1
+		\]
+		Assim, todas as potências de $2$ tem imagem igual a $1$.
+		\item Da igualdade $f(2n + 1) = n^2, n \geq 1$ tem-se
+				$f(3) = f(2 \cdot 1 + 1) = 1$. As imagens de todos os demais números ímpares é um quadrado perfeito diferente de $1$, portanto diferente de $3$.
+		\item  A imagem de qualquer outro número par que não é potência de $2$, e igual a imagem de um número ímpar e, portanto, diferente de $3$.
+		\item Como $3 \in CD(f)$, $3 \in CD(g)$, $3 \in Im(f)$ e $3 \in Im(g)$, nem $f$, nem $g$ são sobrejetoras.
+		\item $f(2) = f(1) = 1$, portanto $f$ não é injetora.
+				\begin{eqnarray*}
+						g(1) = f(1) \cdot f(2) = 1 \cdot 1 = 1\ \text{e}\\
+						g(2) = f(2) \cdot f(3) = 1 \cdot 1 = 1 
+				\end{eqnarray*}
+$g$ não é injetora, pois $g(1) = g(2)$
+		\item 
+				\begin{eqnarray*}
+				g(2018) &= & f(2018) \cdot f(2019) = f(1009) \cdot f(2019) \\
+					   &= & 5042 \cdot 10092
+				\end{eqnarray*}
+				que possui mais do que $4$ divisores positivos
+\end{enumerate}
+}

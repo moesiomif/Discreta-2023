@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{moesio} 
+%-------------------------------------------------------------
+\usepackage[url,doi,style=numeric,backend=biber]{biblatex}
+\addbibresource{ref.bib}
+%-------------------------------------------------------------
+\newcommand{\nome}{\bf Moésio M. de Sales\footnote{moesio@ifce.edu.br}}
+\newcommand{\titu}{Funções}
+\newcommand{\subtitu}{Exercícios}
+\newcommand{\disc}{Matemática Discreta}
+\newcommand{\curso}{Sistemas de Informação}
+\newcommand{\inst}{IFCE}
+%-------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{fit, shapes.geometric, arrows}
+%-------------------------------------------------------------
+\newcommand{\qst}[1]{\noindent
+\colorbox{blue!10}{\begin{minipage}[t]{.85\textwidth}
+		 #1  \end{minipage}}}
+\newcommand{\Sol}[1]{\noindent
+\colorbox{red!10}{\begin{minipage}[t]{.88\textwidth}
+\begin{sol} #1 \end{sol} \end{minipage}}}
+\newcommand{\dest}[1]{\noindent
+\colorbox{red!10}{\begin{minipage}[t]{.85\textwidth}
+\begin{center} #1 \end{center} \end{minipage}}}
+%-------------------------------------------------------------
+\begin{document}
+{\Large
+\begin{center} \titu\\ \disc\\ \curso \\  \nome\end{center}
+}
+%-------------------------------------------------------------
+\hfill   %\today\\[2mm]
+\hrule\ 
+%-------------------------------------------------------------
+%-------------------------------------------------------------
+\section{\sc Problemas Funções}
+
+Estude\cite{gersting2004fundamentos,Ed1976teoria,scheinerman2003mat}
+
+\bexer
+\input{questions/q1-ita.tex}
+\input{questions/q25-ita.tex}
+\input{questions/q26-ime.tex}
+\input{questions/q2-ita.tex}
+\input{questions/q3-ita.tex}
+\input{questions/q4-ita.tex}
+\eexerc
+%-------------------------------------------------------------
+\printbibliography
+%-------------------------------------------------------------
+\end{document}
