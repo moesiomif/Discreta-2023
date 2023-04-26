@@ -1,5 +1,4 @@
 \item
-		 %(ITA 2009)
 		Seja $f :\mathbb{R}\to \mathbb{R}-\{0\}$  uma função satisfazendo às condições:
 		\[
 		\begin{cases}
@@ -14,3 +13,33 @@ Podemos afirmar:
 				\item $f$ é injetiva.
 				\item  $f$ não é sobrejetiva, pois $f(x)>0,\ \forall x\in \mathbb{R}$.
 		\end{enumerate}
+
+		\Sol{
+				\begin{enumerate}
+						\item ({\bf Falso}) Uma função é impar se para todo $x$, $f(-x)=-f(x)$.
+
+								Tomando $x=y=\frac{x}{2}$, obtemos:
+								\begin{eqnarray*}
+										f(\frac{x}{2}+\frac{x}{2}) =  f(\frac{x}{2})\cdot f(\frac{x}{2})\\
+										f(x) =  [f(\frac{x}{2})]^2
+								\end{eqnarray*}
+Ou seja, para todo $x\in\R$, $f$ é sempre positivo e portanto não pode ser ímpar. 
+						\item ({\bf Verdadeiro}) Tome $x=y=0$
+								\begin{eqnarray*}
+										f(0+0) = f(0)\cdot f(0)\\
+										f(0) = f(0)\cdot f(0)
+								\end{eqnarray*}
+								Como $f(0)\neq 0$ para todo $x$, obtemos $f(0) = \frac{f(0)}{f(0)}=1$
+						\item ({\bf Verdadeiro}) Seja 
+								\begin{eqnarray*}
+										x\neq y \Rightarrow x-y &\neq& 0\\
+										f(x-y) &\neq& 1\ \text{pois}\ f(x)\neq 1, \forall x\neq 0\\
+										f(x)f(-y) &\neq& 1\\
+										f(x)  &\neq& \frac{1}{f(-y)}
+								\end{eqnarray*}
+		Agora, note que $f(y-y) = f(y)f(-y)\Rightarrow f(0)=f(y)f(-y)\Rightarrow f(y)=\frac{1}{f(-y)}$. 
+		Portanto, $f(x) \neq \frac{1}{f(-y)}=f(y)$. Logo, $f$ é injetiva.
+						\item ({\bf Verdadeiro}) Pelo item (a), $f$ é sempre positivo, mas o domínio de $f$ pelo enunciado
+								é $\R-\{0\}$ portanto $f$ não é sobrejetiva pois não assume valores negativos.
+				\end{enumerate}
+		}
