@@ -1,2 +1,25 @@
 \item 
 Seja $A\vartriangle B=(A-B)\cup (B-A)$. Prove que $A\vartriangle B=A\vartriangle C$ implica $B=C$.
+
+\Sol{
+		{\bf Primeiro:}
+
+$A\vartriangle B=A\vartriangle C \Rightarrow B \subset C$
+
+Note que se $x\in A\vartriangle B$, significa que $x\in A-B$ ou $x\in B-A$, ou seja, $x$ pertence apenas a $A$ ou apenas a $B$.
+
+Seja $x\in B$. Temos dois casos:
+
+\begin{itemize}
+		\item Se $x$ pertence apenas a $B$, então $x\in (A-B)\cup (B-A)$. Como $A\vartriangle B=A\vartriangle C$
+				neste caso $x\in A\vartriangle C$, logo $x\in(A-C)\cup (C-A)$ e como $x\not\in A$ temos que $x\in C$.
+
+		\item Se $x$ pertence a $B$ e a $A$, então $x\not\in (A-B)\cup (B-A)$.  Como $A\vartriangle B=A\vartriangle C$
+				neste caso $x\not\in A\vartriangle C$, logo $x\not\in(A-C)\cup (C-A)$ e como $x\in A$ temos que $x\in C$.
+\end{itemize}
+ 
+{\bf Analogamente:}
+
+$A\vartriangle B=A\vartriangle C \Rightarrow B \supset C$
+
+}
