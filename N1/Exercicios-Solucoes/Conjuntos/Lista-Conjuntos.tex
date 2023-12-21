@@ -1,5 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{moesio} 
+\usepackage{amssymb}
 %-------------------------------------------------------------
 \usepackage[url,doi,style=numeric,backend=biber]{biblatex}
 \addbibresource{ref.bib}
@@ -14,12 +15,16 @@
 \usepackage{tikz}
 \usetikzlibrary{fit, shapes.geometric, arrows}
 %-------------------------------------------------------------
+\renewcommand\textbullet{\ensuremath{\bullet}}
+%\renewcommand{\qed}{\hfill\blacksquare}
+\newcommand{\qedwhite}{\hfill \ensuremath{\Box}}
+%-------------------------------------------------------------
 \newcommand{\qst}[1]{\noindent
 \colorbox{blue!10}{\begin{minipage}[t]{.85\textwidth}
 		 #1  \end{minipage}}}
 \newcommand{\Sol}[1]{\noindent
 \colorbox{red!10}{\begin{minipage}[t]{.88\textwidth}
-\begin{sol} #1 \end{sol} \end{minipage}}}
+\begin{sol} #1 \qedwhite\end{sol}\end{minipage}}}
 \newcommand{\dest}[1]{\noindent
 \colorbox{red!10}{\begin{minipage}[t]{.85\textwidth}
 \begin{center} #1 \end{center} \end{minipage}}}
