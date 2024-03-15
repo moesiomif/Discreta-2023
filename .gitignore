@@ -9,7 +9,7 @@
 *.fmt
 *.fot
 *.cb
-*.cb2
+*.cb2mobiusnordeste/Discreta-2023
 .*.lb
 
 ## Videos no arq:
@@ -299,4 +299,4 @@ aula34-euclides_primos.pdf
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
-
+#certo isso mobius 2024
